@@ -8,7 +8,7 @@ class EmailParser
   def initialize(email)
     @email = email
   end
-  
+
   def parse
     emails = email.gsub(",","").split(" ").uniq { |x| x }
   end
