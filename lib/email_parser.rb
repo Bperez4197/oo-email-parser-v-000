@@ -10,6 +10,7 @@ class EmailParser
   end
   
   def parse
+    emails = email.gsub(",","").split(" ").uniq { |x| x }
   end
 
 end
